@@ -23,11 +23,11 @@ public class MonsterController
 			{
 		{
 			Scanner myScanner = new Scanner(System.in);
-			System.out.println(currentMonster.getName() + "wants to know how many eyes you want to eat, please type how many");
-			currentMonster.setEyeCount(currentMonster.getEyeCount() - Consumed);
+			System.out.println(currentMonster.getName() + " wants to know how many eyes you want to eat, please type how many");
 			int Consumed = myScanner.nextInt();
+			currentMonster.setEyeCount(currentMonster.getEyeCount() - Consumed);
 			System.out.println(currentMonster);
-		
+			
 	myScanner.close();
 		}
 	}
