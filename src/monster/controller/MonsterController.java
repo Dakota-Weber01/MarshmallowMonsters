@@ -2,9 +2,14 @@ package monster.controller;
 
 import monster.model.MarshmallowMonster;
 import java.util.Scanner;
-
+import monster.view.MonsterDisplay;
 public class MonsterController
 {
+	private MonsterDisplay popup;
+	public MonsterController()
+	{
+		popup = new MonsterDisplay();
+	}
 	public void start()
 	{
 		MarshmallowMonster basic = new MarshmallowMonster();
@@ -53,8 +58,10 @@ public class MonsterController
 			{
 				System.out.println("More likely");
 			}
-			
-			myScanner.close();
+			popup.displayText("Hi there, ready to play?");
+			String answer = popup.getResponse("What is the air speed of a coconut laden swallow?");
+			System.out.println(answer);
+			myScanner.close();		
 		}		
 	}	
 }
