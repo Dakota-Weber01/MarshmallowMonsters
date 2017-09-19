@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class MonsterController
 {
-
 	public void start()
 	{
 		MarshmallowMonster basic = new MarshmallowMonster();
@@ -17,10 +16,8 @@ public class MonsterController
 		{
 		interactWithMonster(yeet); }
 		}
-	
-		
 			private void interactWithMonster(MarshmallowMonster currentMonster)
-			{
+	{
 		{
 			Scanner myScanner = new Scanner(System.in);
 			System.out.println(currentMonster.getName() + " wants to know how many eyes you want to eat, please type how many");
@@ -39,11 +36,8 @@ public class MonsterController
 			else if(armEat < 0)
 			{
 				System.out.println("Reality is hard for you - it is impossible to eat a negative amount");
-			}
-			
-				
-			else if(armEat - currentMonster.getArmCount() < 0)
-				
+			}		
+			else if(armEat - currentMonster.getArmCount() < 0)		
 			{
 			System.out.println("You are not allowed to eat more than exist on me :/");
 			}		
@@ -51,11 +45,8 @@ public class MonsterController
 			{
 				System.out.println("OK, now I have this many arms " + currentMonster.getArmCount());
 			}
-		
 			myScanner.close();
-			}
-			
-	}
-	
+		}		
+	}	
 }
  
