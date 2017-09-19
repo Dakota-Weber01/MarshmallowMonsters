@@ -24,11 +24,9 @@ public class MonsterController
 			int Consumed = myScanner.nextInt();
 			currentMonster.setEyeCount(currentMonster.getEyeCount() - Consumed);
 			System.out.println(currentMonster);
-			
 			System.out.println("How many arms are you interested in eating?, I have " + currentMonster.getArmCount()); 
 			//consumed = myScanner.nextInt();
 			int armEat = myScanner.nextInt();
-			
 			if(armEat == 0)
 			{
 				System.out.println("Not hungry? oh so sad...");
