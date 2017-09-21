@@ -6,6 +6,8 @@ import monster.view.MonsterDisplay;
 public class MonsterController
 {
 	private MonsterDisplay popup;
+	
+	
 	public MonsterController()
 	{
 		popup = new MonsterDisplay();
@@ -13,10 +15,13 @@ public class MonsterController
 	public void start()
 	{
 		MarshmallowMonster basic = new MarshmallowMonster();
-		System.out.println(basic);
+//		System.out.println(basic);
+		popup.displayText(basic.toString());
 		MarshmallowMonster yeet = new MarshmallowMonster("Stinky Yeet Monster", 2, 6, 1, true);
-		System.out.println(yeet);
-		System.out.println("I am feeling hungry, I'm going to eat one of Yeet's arms");
+//		System.out.println(yeet);
+		popup.displayText(yeet.toString());
+//		System.out.println("I am feeling hungry, I'm going to eat one of Yeet's arms");
+		popup.displayText(yeet.toString());
 		yeet.setArmCount(yeet.getArmCount()-1);
 		{
 		interactWithMonster(yeet); }
