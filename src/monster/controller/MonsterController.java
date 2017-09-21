@@ -33,9 +33,10 @@ public class MonsterController
 //			System.out.println(currentMonster.getName() + " wants to know how many eyes you want to eat, please type how many");
 			int consumed;
 			String response = int consumed = popup.getResponse(currentMonster.getName() + " wants to know how many eyes you want to eat, please type how many");
+			if (isValidInteger(response))
 			consumed = Integer.parseInt(response);
-			int Consumed = myScanner.nextInt();
-			currentMonster.setEyeCount(currentMonster.getEyeCount() - Consumed);
+//			int Consumed = myScanner.nextInt();
+			currentMonster.setEyeCount(currentMonster.getEyeCount() - consumed);
 			System.out.println(currentMonster);
 			System.out.println("How many arms are you interested in eating?, I have " + currentMonster.getArmCount()); 
 			//consumed = myScanner.nextInt();
