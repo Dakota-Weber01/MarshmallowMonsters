@@ -58,8 +58,9 @@ public class MarshmallowMonster
 	}
 	public void setHasBloop(boolean hasBloop)
 	{
-		this.hasBloop = hasBloop;
+		this.hasBloop = hasBloop;	
 	}
+	// ^ Assigning all of them to integers and values for the responses to work.
 	public String toString()
 	{
 	String description = "I am a stinky monster, my name is " + name + " I have" + eyeCount +  " eyes and only";
@@ -67,4 +68,5 @@ public class MarshmallowMonster
 	description += " if I have a bloop"; 
 	return description;
 	}	
+	// Using the methods to make sure that we get the right amount and to make sure everything works.
 }
