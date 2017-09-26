@@ -125,7 +125,7 @@ public class MonsterController
 				{
 				catch(NumberFormatException Error);
 				}
-				{
+				
 				popup.displayText("You need to type in a double -" + sampleDouble);
 			}
 			{
