@@ -69,7 +69,7 @@ public class MonsterController
 				popup.displayText("My name is" + current.getName());;
 			}
 			
-			}
+		}
 			
 			private void interactWithMonster(MarshmallowMonster currentMonster)
 			// Classes and imported objects scanners, displays etc.
