@@ -48,9 +48,29 @@ public class MonsterController
 		
 		monsterList.add(basic);
 		monsterList.add(yeet);
+		useList();
 		
 		interactWithMonster(yeet); 
+		
 		}
+			private void useList()
+			{
+				for (int index = 0; index < monsterList.size(); index++)
+				{
+					MarshmallowMonster currentMonster = monsterList.get(index);
+					popup.displayText(currentMonster.getName());
+					String updateName = popup.getResponse("What Should my new name be?");
+					currentMonster.setname(updateName);
+					popup.displayText("My new name is " + currentMonster.getName());
+				}
+				
+			for (MarshmallowMonster current : monsterList)
+			{
+				popup.displayText("My name is" + current.getName());;
+			}
+			
+			}
+			
 			private void interactWithMonster(MarshmallowMonster currentMonster)
 			// Classes and imported objects scanners, displays etc.
 			{
