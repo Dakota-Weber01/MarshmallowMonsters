@@ -3,14 +3,17 @@ package monster.controller;
 import monster.model.MarshmallowMonster;
 import java.util.Scanner;
 import monster.view.MonsterDisplay;
+import java.util.List;
+import java.util.ArrayList;
 public class MonsterController
 {
 	private MonsterDisplay popup;
-	
+	private List<MarshmallowMonster> monsterList;
 	
 	public MonsterController()
 	{
 		popup = new MonsterDisplay();
+		monsterList = new ArrayList<MarshmallowMonster>();
 	}
 	
 
@@ -42,6 +45,10 @@ public class MonsterController
 		popup.displayText("I am feeling hungry, I'm going to eat one of Yeet's arms");
 		popup.displayText(yeet.toString());
 		yeet.setArmCount(yeet.getArmCount()-1);
+		
+		monsterList.add(basic);
+		monsterList.add(yeet);
+		
 		interactWithMonster(yeet); 
 		}
 			private void interactWithMonster(MarshmallowMonster currentMonster)
